@@ -20,4 +20,8 @@ class CurrencyExchangeTest < Test::Unit::TestCase
     correct_rate = 0.007763975155279502
     assert_equal correct_rate, CurrencyExchange.rate(Date.new(2018,11,22), "JPY", "EUR")
   end
+
+  # def test_cannot_calculate_exchange_rate_exception
+  #   assert_raise(NotFoundError)
+  # end
 end
